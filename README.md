@@ -60,12 +60,10 @@ Output:
   "intent": "sales_enquiry",
   "confidence": 0.92
 }
-
 🧠 Architecture
 n8n handles workflow orchestration
 FastAPI manages business logic
 Google Sheets stores processed leads
-
 ⚡ System Design
 Scalability
 Supports high-volume lead processing
@@ -75,7 +73,6 @@ Retry mechanisms for API calls
 Execution logging via n8n
 Idempotency
 Email used as a unique identifier to prevent duplicates
-
 📤 Push Code to GitHub
 git init
 git add .

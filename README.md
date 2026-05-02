@@ -1,23 +1,25 @@
-# 🚀 AI-Powered Lead Automation System
+# AI-Powered Lead Automation System
 
 ## 📌 Overview
-This project is an end-to-end automation pipeline that processes incoming leads, enriches data, classifies user intent, stores structured output, and sends notifications automatically.
+This project is an AI-powered automation system that processes incoming leads, enriches data, classifies intent, and stores results using n8n and FastAPI.
 
 ---
 
-## 🛠️ Tech Stack
+## ⚙️ Tech Stack
 - n8n (Workflow Automation)
 - FastAPI (Backend APIs)
-- Google Sheets (Data Storage)
-- SMTP Email (Notification)
+- Google Sheets (Storage)
 
 ---
 
-## ⚙️ Setup Instructions
+## 🔁 Workflow
+Webhook → Validation → Enrichment API → Classification API → Merge → Storage → Notification
 
-### 1️⃣ Run Backend (FastAPI)
+---
 
+## 🚀 Setup Instructions
+
+### 1. Clone Repo
 ```bash
-cd backend
-pip install -r requirements.txt
-uvicorn main:app --reload
+git clone https://github.com/your-username/ai-lead-automation-system.git
+cd ai-lead-automation-system

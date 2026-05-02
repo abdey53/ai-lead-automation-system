@@ -1,23 +1,26 @@
-🚀 AI-Powered Lead Automation System
-📌 Overview
+# AI-Powered Lead Automation System
 
-This project is an AI-powered automation system that:
+## 📌 Overview
+This project is an AI-powered automation system that processes incoming leads, enriches data, classifies intent, and stores results using n8n and FastAPI.
 
-Processes incoming leads
-Enriches lead data
-Classifies user intent
-Stores results automatically
+---
 
-Built using n8n and FastAPI, it enables scalable and intelligent lead handling.
+## ⚙️ Tech Stack
+- n8n (Workflow Automation)
+- FastAPI (Backend APIs)
+- Google Sheets (Storage)
 
-⚙️ Tech Stack
-n8n – Workflow Automation
-FastAPI – Backend APIs
-Google Sheets – Data Storage
-🔁 Workflow
+---
+
+## 🔁 Workflow
 Webhook → Validation → Enrichment API → Classification API → Merge → Storage → Notification
-🚀 Setup Instructions
-1. Clone Repository
+
+---
+
+## 🚀 Setup Instructions
+
+### 1. Clone Repo
+```bash
 git clone https://github.com/your-username/ai-lead-automation-system.git
 cd ai-lead-automation-system
 2. Run Backend
@@ -25,11 +28,11 @@ cd backend
 pip install -r requirements.txt
 uvicorn app:app --reload
 
-Server will run at:
+Server runs at:
 
 http://127.0.0.1:8000
 🔌 API Endpoints
-📥 POST /enrich
+POST /enrich
 
 Input:
 
@@ -46,7 +49,7 @@ Output:
   "company_size": "51-200",
   "industry": "Technology"
 }
-📥 POST /classify
+POST /classify
 
 Input:
 
@@ -62,30 +65,39 @@ Output:
 }
 🧠 Architecture
 n8n handles workflow orchestration
-FastAPI manages business logic
+FastAPI handles business logic
 Google Sheets stores processed leads
+
+---
 ⚡ System Design
 Scalability
-Supports high-volume lead processing
-Can integrate Redis + Celery for async execution
+Can use Redis + Celery for async processing
+Supports high volume lead processing
 Reliability
-Retry mechanisms for API calls
-Execution logging via n8n
+Retry mechanism in API calls
+Logging via n8n executions
 Idempotency
-Email used as a unique identifier to prevent duplicates
-📤 Push Code to GitHub
+Email used as unique identifier to avoid duplicates
+
+---
+
+# 📤 STEP 6: Push Code
+
+In terminal:
+
+```bash
 git init
 git add .
 git commit -m "Initial commit - AI Lead Automation System"
 git branch -M main
 git remote add origin https://github.com/your-username/ai-lead-automation-system.git
 git push -u origin main
-🎯 Final Checklist
+🎯 FINAL CHECKLIST
 
 Before submitting:
 
 ✅ FastAPI code uploaded
-✅ n8n workflow JSON added
-✅ README completed
-✅ Repository is public
-✅ Loom demo video ready
+✅ n8n JSON uploaded
+✅ README added
+✅ Repo public
+✅ Loom video ready
